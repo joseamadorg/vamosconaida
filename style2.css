@@ -1924,11 +1924,14 @@ img.aligncenter {
 /**
  * 6.3 - Social
  */
-.social {
-    margin: 0;
+ .social {
+    margin: 0 auto;
     padding: 0;
     list-style: none;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
 }
 
 .social li {
@@ -1964,7 +1967,7 @@ img.aligncenter {
 
 .social li a .rsicon {
     color: #fff;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 45px;
     display: block;
 }
