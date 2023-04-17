@@ -6735,7 +6735,7 @@ body {
 /*# sourceMappingURL=style.css.map */
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 992px) {
     *{
         font-size: 1rem !important;
     }
