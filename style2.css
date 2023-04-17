@@ -2997,6 +2997,7 @@ body {
 
 .header-has-img .head-sticky.head-bar {
     background-color: #fff;
+    display: none;
 }
 
 .header-has-img .head-sticky .nav-wrap .nav > ul > li > a {
