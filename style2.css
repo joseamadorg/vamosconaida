@@ -62,7 +62,7 @@
  */
 
 .bio{
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: justify;
     margin-bottom: 1rem !important;
     color: #fff;
@@ -3588,7 +3588,6 @@ body {
 }
 
 .section-about .profile-photo {
-    margin-right: 10%;
     margin-bottom: 10px;
 }
 
