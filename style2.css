@@ -2289,7 +2289,7 @@ img.aligncenter {
  .counter-wrap{
     display: flex;
     justify-content: space-around;
-    margin: 0.5rem 0rem;
+    margin: 2rem 0rem;
  }
 
  .counter {
@@ -3543,7 +3543,6 @@ body {
  */
 .foto{
     transform: rotateY(180deg);
-    margin-top: 2rem;
 }
 
 /**
@@ -3563,6 +3562,7 @@ body {
     padding: 21px 55px;
     letter-spacing: 0.05em;
     margin: 5px;
+    margin-bottom: 1rem;
     background: #efefef;
 }
 
