@@ -1,3 +1,25 @@
+.date{
+  color: #fe891d !important;
+ 
+}
+
+.dot, .timeline-bar{
+  background-color: #fe891d !important;
+}
+
+.theme-color-07cb79 .timeline-box-inner{
+  border-color: #fe891d !important;
+  border-top: 10px solid;
+}
+
+.profile-preword span, .profile-social{
+  background-color: #059031 !important;
+}
+
+.theme-color-07cb79 .ref-box .person-speech:before{
+  color: #fe891d !important;
+}
+
 .theme-color-07cb79 a,
 .theme-color-07cb79 blockquote:before,
 .theme-color-07cb79 .contact-map .contact-info a:hover,
@@ -56,12 +78,12 @@
   background-color: #059031; }
 .theme-color-07cb79 .mejs-container .mejs-controls .mejs-time-rail .mejs-time-current,
 .theme-color-07cb79 .mejs-container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
-  background: #059031; }
+  background: #fe891d; }
 .theme-color-07cb79 .timeline-box-inner,
 .theme-color-07cb79 .price-box.box-primary .btn,
 .theme-color-07cb79 .widget_search .search-form,
 .theme-color-07cb79 .widget_tag_cloud a:hover {
-  border-color: #059031; }
+  border-color: #fe891d; }
 .theme-color-07cb79 .page-404 h2 span:before,
 .theme-color-07cb79 .profile-preword span:before,
 .theme-color-07cb79 .timeline-box-compact .date span:before {
