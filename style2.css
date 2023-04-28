@@ -6748,9 +6748,11 @@ body {
 
     .counter {
         width: 100%;
+        
     }
     .counter-wrap{
         flex-direction: column;
+        margin: 0rem;
     }
 
     .profile-preword {
