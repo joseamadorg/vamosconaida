@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AIDA ORTIZ</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.svg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fonts/map-icons/css/map-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="./style.css">
+	<style>
+		.timer{
+			font-size: 2rem;
+		}
+		@media screen and (max-width: 767px) {
+			.content {height: 100vh; display: flex; align-items: center;}	
+			.timer{font-size: 1rem;}	
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<div class="container">
+				<section class="section">
+					<div class="row">
+						<img class="logo perfil" style="margin-bottom: 1rem; width: 90%;" src="./img/aida_ortiz_logo.svg" alt="AIDA ORTIZ"></div>
+						<p class="timer-title no-margin">Conoce todos los detalles del Programa e Ideas de la Profesora Aida Ortiz para la FAGRO-UCV a partir de:</p>
+						<div id="timer" class="timer">
+							<div class="days-wrp">
+								<span id="days">00</span> <span class="dias"> días,</span>
+								<span id="hours">00</span><span class="horas"> horas,</span> 
+							</div>
+							<div class="time-wrp">
+								<span id="minutes">00</span><span class="minutos"> minutos,</span> 
+								<span id="seconds">00</span><span class="segundos"> segundos</span> 
+							</div>
+						</div>
+						<iframe class="envivo" width="100%" src="https://www.youtube.com/embed/VwvqoNPX0c4" title="Conversatorio en Vivo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</section>
+			</div>
+			<footer class="footer" style="background-color: #059031;">
+				<div class="footer-social">
+					<ul class="social">
+						<li><a class="ripple-centered" href="https://twitter.com/aidaortizd" target="_blank"><i class="rsicon rsicon-twitter"></i></a></li>
+						<li><a class="ripple-centered" href="https://www.linkedin.com/in/aida-ortiz-4b475927" target="_blank"><i class="rsicon rsicon-linkedin"></i></a></li>
+						<li><a class="ripple-centered" href="https://www.instagram.com/vamosconaida/" target="_blank"><i class="rsicon rsicon-instagram"></i></a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<script>
+		const countdownDate = new Date("2023-05-05T00:00:00").getTime();
+		const timer = document.getElementById("timer");
+
+		function updateCountdown() {
+			const now = new Date().getTime();
+			const distance = countdownDate - now;
+
+			const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+			document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+			document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+			document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+
+			if (distance < 0) {
+				clearInterval(interval);
+				timer.innerHTML = "El evento ha pasado";
+			}
+		}
+
+		const interval = setInterval(updateCountdown, 1000);
+
+    </script>
+</body>
+</html>
