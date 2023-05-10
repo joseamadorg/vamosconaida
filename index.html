@@ -40,6 +40,34 @@
 
     <style>
 
+        html{
+            scroll-behavior: smooth;
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+              
+        }
+
+        nav li a {
+            color: rgb(88, 87, 87) !important;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 0rem 1.5rem;
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1;
+            border: 1px solid #cbcdcf;
+            background: #cbcdcf;
+            box-shadow: none;}
+
+        .section_videos{
+            width: 70%;
+            margin: 0 auto;
+        }
+
         .conversatorio{
             height: 350px;
         }
@@ -51,6 +79,14 @@
 
             .programa{
                 display: none !important;
+            }
+
+            .section_videos{
+            width: 100%;
+            }
+
+            nav{
+                display: none;
             }
         }
     </style>
@@ -73,6 +109,12 @@
             <div class="container">
     
             <!-- START: PAGE CONTENT -->
+            <nav>
+                <ul>
+                    <li><a class="btn btn-lg ripple button" href="#plan">PLAN DE GESTION</a></li>
+                    <li><a class="btn btn-lg ripple button" href="#videos">VIDEOS</a></li>
+                </ul>
+            </nav>
             <section id="about" class="section section-about">
                 <div class="animate-up">
                     <div class="section-box card-3">
@@ -119,7 +161,7 @@
                             <br><br>
                             <div class="col-md-12 p-0 animate-up animated">
                                 <h2 class="section-title">PLAN DE GESTIÓN</h2>
-                                <p class="bio">El Plan de Gestión para la FAGRO, elaborado por un grupo de profesionales liderado por la Profesora Aida Ortiz, tiene como objetivo principal impulsar la innovación, sostenibilidad y conexión entre el campo y la academia. Hemos diseñado un plan para fortalecer la educación y productividad en la Facultad, fomentando un futuro que se sembrará en las aulas y se cosechará en todo el país.</p>
+                                <p id="plan" class="bio">El Plan de Gestión para la FAGRO, elaborado por un grupo de profesionales liderado por la Profesora Aida Ortiz, tiene como objetivo principal impulsar la innovación, sostenibilidad y conexión entre el campo y la academia. Hemos diseñado un plan para fortalecer la educación y productividad en la Facultad, fomentando un futuro que se sembrará en las aulas y se cosechará en todo el país.</p>
                             </div>
                             <div class="col-md-12">
                                 <p class="timer-title no-margin programa">Vea a pantalla completa para una mejor experiencia de lectura.<br>Puede usar las flechas de su teclado para avanzar las páginas de la propuesta. </p>
@@ -279,21 +321,21 @@
                     </div>
                 </div>
             </section>
-            <div class="container-fluid">
-                <div class="row">
-                    <section class="section">
-                        <h2 class="section-title">ENTREVISTAS Y DECLARACIONES</h2>
-                        <div class="col-md-6">
-                            <iframe class="conversatorio" width="100%" src="https://www.youtube.com/embed/VwvqoNPX0c4" title="Conversatorio en Vivo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="col-md-6">               
-                            <iframe class="conversatorio" width="100%" src="https://www.youtube.com/embed/Xg9TV0ErroM" title="Entrevista con VivaLaUCV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </section>
-                </div>
-            </div>
         </div>
         <!-- .container -->
+        <div class="container-fluid">
+            <div class="row">
+                <section id="videos" class="section section_videos">
+                    <h2 class="section-title">ENTREVISTAS Y DECLARACIONES</h2>
+                    <div class="col-md-6">
+                        <iframe class="conversatorio" width="100%" src="https://www.youtube.com/embed/VwvqoNPX0c4" title="Conversatorio en Vivo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6">               
+                        <iframe class="conversatorio" width="100%" src="https://www.youtube.com/embed/Xg9TV0ErroM" title="Entrevista con VivaLaUCV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </section>
+            </div>
+        </div>
     </div>
     <!-- .content -->
     <br><br><br><br>
